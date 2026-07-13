@@ -1,0 +1,85 @@
+<style>
+  .beian-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    padding: 4px 0;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.5;
+    z-index: 999999;
+    pointer-events: none;
+  }
+  .beian-bar a,
+  .beian-bar span {
+    pointer-events: auto;
+  }
+  .beian-pc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  .beian-disclaimer {
+    color: #f5c518;
+    white-space: nowrap;
+  }
+  .beian-icp {
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .beian-gongan {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .beian-gongan img {
+    width: 12px;
+    height: 12px;
+  }
+  @media (max-width: 768px) {
+    .beian-pc {
+      display: none;
+    }
+    .beian-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+    .beian-mobile a,
+    .beian-mobile span {
+      display: block;
+      line-height: 1.5;
+    }
+  }
+  @media (min-width: 769px) {
+    .beian-mobile {
+      display: none;
+    }
+  }
+</style>
+<div class="beian-bar">
+  <div class="beian-pc">
+    <span class="beian-disclaimer">本站内容仅供学习和交流，非商业用途</span>
+    <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" class="beian-icp">浙ICP备2025187466号</a>
+    <a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33030402001483" target="_blank" rel="noopener noreferrer" class="beian-gongan">
+      <img src="https://www.937788.xyz/gonganbeian.png" alt="公安备案" onerror="this.style.display='none'">
+      浙公网安备33030402001483号
+    </a>
+  </div>
+  <div class="beian-mobile">
+    <span class="beian-disclaimer">本站内容仅供学习和交流，非商业用途</span>
+    <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" class="beian-icp">浙ICP备2025187466号</a>
+    <a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33030402001483" target="_blank" rel="noopener noreferrer" class="beian-gongan">
+      <img src="https://www.937788.xyz/gonganbeian.png" alt="公安备案" onerror="this.style.display='none'">
+      浙公网安备33030402001483号
+    </a>
+  </div>
+</div>
